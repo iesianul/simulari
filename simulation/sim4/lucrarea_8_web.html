@@ -1,98 +1,48 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="ro">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
-<title>Lucrarea 8</title>
-<script language="javascript">AC_FL_RunContent = 0;</script>
-<script src="AC_RunActiveContent.js" language="javascript"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucrarea 8</title>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #flash-container {
+      width: 800px;
+      height: 650px;
+      margin: 20px auto;
+    }
+    .info {
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
 </head>
-<body bgcolor="#ffffff">
-<!--url's used in the movie-->
-<!--text used in the movie-->
-<!--
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="right"><font face="LcdD" size="24" color="#00ff00" letterSpacing="0.000000" kerning="1">000.0</font></p>
-<p align="right"><font face="LcdD" size="24" color="#00ff00" letterSpacing="0.000000" kerning="1">0.000</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
-<p align="center"><font face="Arial" size="12" color="#333333" letterSpacing="0.000000" kerning="1">Label</font></p>
--->
-<!-- saved from url=(0013)about:internet -->
-<div align="center">
-<script language="javascript">
-	if (AC_FL_RunContent == 0) {
-		alert("This page requires AC_RunActiveContent.js.");
-	} else {
-		AC_FL_RunContent(
-			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
-			'width', '800',
-			'height', '650',
-			'src', 'lucrarea_8_web',
-			'quality', 'high',
-			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
-			'align', 'middle',
-			'play', 'true',
-			'loop', 'true',
-			'scale', 'showall',
-			'wmode', 'window',
-			'devicefont', 'false',
-			'id', 'lucrarea_8_web',
-			'bgcolor', '#ffffff',
-			'name', 'lucrarea_8_web',
-			'menu', 'true',
-			'allowFullScreen', 'false',
-			'allowScriptAccess','sameDomain',
-			'movie', 'lucrarea_8_web',
-			'salign', ''
-			); //end AC code
-	}
-</script>
-<noscript>
-	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="800" height="650" id="lucrarea_8_web" align="middle">
-	<param name="allowScriptAccess" value="sameDomain" />
-	<param name="allowFullScreen" value="false" />
-	<param name="movie" value="lucrarea_8_web.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" />	<embed src="lucrarea_8_web.swf" quality="high" bgcolor="#ffffff" width="800" height="650" name="lucrarea_8_web" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-	</object>
-</noscript>
-<p>
-	Pentru a putea interactiona cu aplicatia din aceasta pagina trebuie sa aveti instalat Flash Player 9. <br>
-	<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&promoid=BUIGA" target="_blank">Click aici</a> pentru al descarca!
-</p>
-</div>
+<body>
+  <div class="info">
+    Simulare Flash rulată cu Ruffle.
+  </div>
+
+  <div id="flash-container"></div>
+
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      const container = document.getElementById("flash-container");
+      container.appendChild(player);
+      player.style.width = "800px";
+      player.style.height = "650px";
+      player.load("lucrarea_8_web.swf");
+    });
+  </script>
 </body>
 </html>
