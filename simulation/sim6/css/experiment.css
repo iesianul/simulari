@@ -1,0 +1,130 @@
+.draggable{
+	cursor: e-resize;
+}
+.press{
+    outline-width: 0;
+}
+
+.press:focus{
+    outline: none;
+}
+
+.cursorRotate{
+  cursor: url("../cursors/r1.cur"), auto;
+}
+
+@font-face { font-family: Open24; src: url('../fonts/open24.ttf'); }
+
+div.holder {
+	position: relative;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.graph {
+    position: absolute;
+    top: 0px;
+    left: 1050px;
+    width:550px;
+    height:500px;
+}
+div.centerContainer{
+    margin-left: auto;
+    margin-right: auto;
+}
+div.power_gen {
+    position: absolute;
+    top: 284px;
+    left: 260px;
+}
+div.startCrono {
+    position: absolute;
+    top: 374px;
+    left: 50px;
+}
+div.resetCrono {
+    position: absolute;
+    top: 374px;
+    left: 130px;
+}
+div.getData {
+    position: absolute;
+    top: 464px;
+    left: 520px;
+}
+div.resetData {
+    position: absolute;
+    top: 464px;
+    left: 780px;
+}
+div.power_volt {
+    position: absolute;
+    top: 290px;
+    left: 356px;
+}
+div.cronoTextPos {
+    position: absolute;
+    width: 100px;
+    top: 274px;
+    left: 80px;
+    text-align: center;
+}
+div.voltTextPos {
+    position: absolute;
+    width: 100px;
+    top: 60px;
+    left: 280px;
+    text-align: center;
+}
+div.tempTextPos {
+    position: absolute;
+    width: 100px;
+    top: -18px;
+    left: 910px;
+    text-align: center;
+}
+div.materialPos {
+    position: absolute;
+    top: 500px;
+    left: 80px;
+}
+div.rezistentaPos {
+    position: absolute;
+    top: 290px;
+    left: 588px;
+}
+h4.h4_crono { 
+  display: block;
+  font-size: 2.4em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: Open24, sans-serif;
+  color: red;
+}
+h4.h4_volt { 
+  display: block;
+  font-size: 4em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: Open24, sans-serif;
+  color: orange;
+}
+h4.h4_temp { 
+  display: block;
+  font-size: 5em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: Open24, sans-serif;
+  color: black;
+}
+
+

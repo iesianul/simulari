@@ -1,0 +1,104 @@
+.draggable{
+	cursor: e-resize;
+}
+
+div.power_gen {
+	position: absolute;
+    top: 500px;
+    left: 315px;
+}
+div.holder {
+	position: relative;
+	width: 1000px ;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.coarda {
+    position: absolute;
+    top: 50px;
+    left: 846px;
+    z-index: 0;
+}
+div.magnet {
+    position: absolute;
+    top: 339px;
+    left: 857px;
+    z-index: 1;
+}
+div.massRange {
+    position: absolute;
+    top: 530px;
+    left: 400px;
+}
+div.massShow {
+    position: absolute;
+    top: 500px;
+    left: 405px;
+}
+div.roataFrecventa {
+    position: absolute;
+    top: 486px;
+    left: 82px;
+    z-index: 10;
+}
+div.indicatorFrecventa {
+    position: absolute;
+    top: 486px;
+    left: 142px;
+    z-index: 20;
+}
+div.frecvShow {
+    position: absolute;
+    top: 400px;
+    left: 110px;
+    z-index: 30;
+}
+div.centerContainer{
+    margin-left: auto;
+    margin-right: auto;
+}
+div.ampDragContainer { 
+	position: absolute;
+	top: 219px;
+	left: 80px;
+	width: 68px;
+	height:24px; 
+	border:0px solid #ccc;
+}
+div.frecvDragContainer { 
+	position: absolute;
+	top: 263px;
+	left: 80px;
+	width: 68px;
+	height:24px; 
+	border:0px solid #ccc;
+}
+div.microDragContainer { 
+	position: absolute;
+	top: 379px;
+	left: 604px;
+	width: 250px;
+	height:87px; 
+	border:0px solid #ccc;
+}
+div.snapDrag {
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background-color: black;
+	
+}
+div.rangePosition {
+	position: absolute;
+	top: 150px;
+	left: 270px; 
+	border:0px solid #ccc;
+}
+
+div.dataShow {
+	position: absolute;
+	top: 70px;
+	left: 260px;
+	border:0px solid #ccc;
+}
